@@ -1,0 +1,26 @@
+[
+  {
+    "firstname": "Jane",
+    "lastname": "Doe",
+    "email": "janedoe@gmail.com",
+    "password": "12345678",
+    "verified": true,
+    "_id": "62997e2a2aaced56be3ee687"
+  },
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "johndoe@gmail.com",
+    "password": "12345678",
+    "verified": true,
+    "_id": "62997e2a2aaced56be3ee688"
+  },
+  {
+    "firstname": "Peter",
+    "lastname": "Parker",
+    "email": "peterparker@gmail.com",
+    "password": "12345678",
+    "verified": true,
+    "_id": "62997e2a2aaced56be3ee689"
+  }
+]

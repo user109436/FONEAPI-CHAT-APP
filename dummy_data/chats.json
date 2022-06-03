@@ -1,0 +1,16 @@
+[
+    {
+        "_id":"62997e2a2aaced56be3ee656",
+        "chatRoom":"62997e2a2aaced56be3ee696",
+        "message":"Hello Jane! - john doe",
+        "sender":"62997e2a2aaced56be3ee688",
+        "seenBy":["62997e2a2aaced56be3ee688"]
+    },
+     {
+        "_id":"62997e2a2aaced56be3ee657",
+        "chatRoom":"62997e2a2aaced56be3ee697",
+        "message":"Hello Jane! - peter parker",
+        "sender":"62997e2a2aaced56be3ee688",
+        "seenBy":["62997e2a2aaced56be3ee689"]
+    }
+]

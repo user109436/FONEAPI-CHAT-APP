@@ -1,0 +1,14 @@
+[
+    {
+        "_id":"62997e2a2aaced56be3ee696",
+        "roomName":"Chat Room 1",
+        "users":["62997e2a2aaced56be3ee687","62997e2a2aaced56be3ee688"],
+        "lastMessage":"62997e2a2aaced56be3ee656"
+    },
+    {
+        "_id":"62997e2a2aaced56be3ee697",
+        "roomName":"Chat Room 2",
+        "users":["62997e2a2aaced56be3ee687","62997e2a2aaced56be3ee689"],
+        "lastMessage":"62997e2a2aaced56be3ee657"
+    }
+]
