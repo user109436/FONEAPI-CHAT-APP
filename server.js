@@ -5,7 +5,7 @@ const server = app.listen(port, () => {
   console.log(`App Running on ${port}...`);
 });
 const io = require("socket.io")(server, {
-  ingTimeout: 60000,
+  pingTimeout: 60000,
   cors: {
     origin: "*",
   },
