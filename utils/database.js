@@ -1,6 +1,8 @@
 const fs = require("fs");
 const mongoose = require("mongoose");
-require("dotenv").config({ path: "../.env" });
+
+//uncomment it for running locally - "node database" will import fresh copy of database from dummy_data
+// require("dotenv").config({ path: "../.env" });
 
 // 1. Connect to Database
 

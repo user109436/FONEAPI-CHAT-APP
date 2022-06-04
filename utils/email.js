@@ -2,11 +2,11 @@ const nodemailer = require("nodemailer");
 const { google } = require("googleapis");
 const htmlToText = require("html-to-text");
 const OAuth2 = google.auth.OAuth2;
-const dotenv = require("dotenv").config();
+// const dotenv = require("dotenv").config({ debug: true });
 
-if (dotenv.error) {
-  throw dotenv.error;
-}
+// if (dotenv.error) {
+//   throw dotenv.error;
+// }
 
 module.exports = class Email {
   constructor(user, url) {
