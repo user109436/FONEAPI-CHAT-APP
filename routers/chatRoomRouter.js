@@ -16,4 +16,5 @@ router
   .get(chatRoomController.getChatRoom)
   .delete(chatRoomController.deleteChatRoom);
 
+router.route("/user/:id").get(chatRoomController.getUserChatRooms);
 module.exports = router;
