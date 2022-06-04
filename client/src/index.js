@@ -3,7 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import axios from "axios";
 
+axios.defaults.baseURL = "https://e-consultation-app.herokuapp.com";
+// axios.defaults.baseURL = "http://localhost:3001";
+axios.defaults.headers.common["Authorization"] = `Bearer ${localStorage.getItem(
+  "token"
+)}`;
+axios.create({
+  withCredentials: true,
+});
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
