@@ -37,9 +37,7 @@ export const fullname = (name) => {
   if (!name) return false;
   let fullname = "";
   fullname += name?.firstname + " " || "";
-  fullname += name?.middlename ? name?.middlename + " " : "";
   fullname += name?.lastname || "";
-  fullname += name?.suffix ? name?.suffix + " " : "";
   return fullname;
 };
 
