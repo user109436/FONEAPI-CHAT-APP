@@ -47,12 +47,7 @@ exports.sendMessage = catchAsync(async (req, res, next) => {
   const lastMessage = await ChatRoom.findByIdAndUpdate(req.params.id, {
     lastMessage: message._id,
   });
-  res.status(200).json({
-    status: "success",
-    data: {
-      message,
-    },
-  });
+  this.getChatRoomMessages(req, res, next);
 });
 
 //upon clicking on chatRoom user will automatically "seen" all the messages
