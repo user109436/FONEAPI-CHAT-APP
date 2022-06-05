@@ -1,4 +1,4 @@
-import { Box, Button, Container, Typography } from "@mui/material";
+import { Box, Button, Container } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const NotFound = () => (

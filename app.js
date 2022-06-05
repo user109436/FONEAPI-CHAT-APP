@@ -36,6 +36,9 @@ const chatRoomRouter = require("./routers/chatRoomRouter");
 //User
 const userRouter = require("./routers/userRouter");
 
+//Images
+const imageRouter = require("./routers/imgRouter");
+
 const app = express();
 //display dev env
 app.use((req, res, next) => {
@@ -99,6 +102,9 @@ app.use("/api/chatrooms", chatRoomRouter);
 
 //Users
 app.use("/api/users", userRouter);
+
+//Images
+app.use("/api/images", imageRouter);
 
 //STATIC FILES SERVING
 if (process.env.NODE_ENV === "production") {
