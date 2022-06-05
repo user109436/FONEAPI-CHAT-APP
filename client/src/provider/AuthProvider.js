@@ -4,7 +4,7 @@ const AuthContext = createContext({});
 export const AuthProvider = ({ children }) => {
   const [auth, setAuth] = useState(null);
   const [loggedInUser, setLoggedInUser] = useState(null);
-
+  const [selectedChatRoom, setSelectedChatRoom] = useState(null);
   return (
     <AuthContext.Provider
       value={{
@@ -12,6 +12,8 @@ export const AuthProvider = ({ children }) => {
         setAuth,
         loggedInUser,
         setLoggedInUser,
+        selectedChatRoom,
+        setSelectedChatRoom,
       }}
     >
       {children}

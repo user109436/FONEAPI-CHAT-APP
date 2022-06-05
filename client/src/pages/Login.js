@@ -16,6 +16,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { hasErrors, resetErrors } from "../utils/Utilities";
 import { AccountMailingFeatures } from "../components/AccountFeatures";
+import AuthContext from "../provider/AuthProvider";
 function Copyright(props) {
   return (
     <Typography
@@ -42,7 +43,7 @@ const darkTheme = createTheme({
 
 const Login = () => {
   //declartion
-
+  const { setAuth, setLoggedInUser } = React.useContext(AuthContext);
   const [loginForm, setLoginForm] = React.useState({
     email: "",
     password: "",
@@ -75,6 +76,8 @@ const Login = () => {
         if (data.status === "success" && data.token) {
           localStorage.setItem("token", data.token);
           localStorage.setItem("user", JSON.stringify(data.data.user));
+          setAuth(data.token);
+          setLoggedInUser(data.data.user);
           navigate("/chat");
         }
       } catch (err) {
