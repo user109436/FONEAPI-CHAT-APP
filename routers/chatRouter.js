@@ -13,4 +13,10 @@ router
   .get(chatController.getChat)
   .delete(chatController.deleteChat);
 
+router
+  .route("/chatroom/:id") //id of chatroom
+  .get(chatController.getChatRoomMessages)
+  .post(chatController.sendMessage)
+  .patch(chatController.messageSeen);
+
 module.exports = router;
